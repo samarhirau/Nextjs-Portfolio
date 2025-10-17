@@ -186,7 +186,7 @@ export function ContactSection() {
 
       {/* Footer */}
       <footer className="mt-20 pt-8 border-t border-border text-center">
-        <p className="text-muted-foreground">created by  <a href="https://portfolio2025-wine.vercel.app/"><span className="text-red-600 underline text-sm cursor-auto">SAMAR HIRAU</span></a> Built with ❤️ using Next.js and Tailwind CSS.</p>
+        {/* <p className="text-muted-foreground">created by  <a href="https://portfolio2025-wine.vercel.app/"><span className="text-red-600 underline text-sm cursor-auto">SAMAR HIRAU</span></a> Built with ❤️ using Next.js and Tailwind CSS.</p> */}
       </footer>
     </section>
   )

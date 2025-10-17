@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import Image from "next/image"
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -28,6 +29,20 @@ export function HeroSection() {
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className={`transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
+          
+          {/* Profile Image */}
+          <div className="flex justify-center mb-8">
+            <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-primary/50 shadow-lg shadow-primary/30 animate-fade-in">
+              <Image
+                src="/logo.jpg" // <-- replace with your actual image path
+                alt="Profile Picture"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
+
           <h1 className="text-5xl md:text-7xl font-bold font-[family-name:var(--font-heading)] mb-6 text-balance">
             Hi, I'm{" "}
             <span className="text-primary bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
